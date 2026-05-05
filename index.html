@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O mapa perdido</title>
+    <title>O mapa secreto: o jogo</title>
     <link rel="stylesheet" href="style.css" 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
-<script src="script.js" defer></script>
 <body>
     <main> 
-        <div>
-            <h1> A mapa desconhecido</h1>
+        <div class="topo" id="topo">
+            <h1> O mapa secreto</h1>
             <p> Essa história ocorre em 2011, no Brasil, Jefferson, um pequeno menino de 11 anos vivia normalmente, porém não esperava o que ia acontecer em breve.
                 No dia 28 de maio de 2011, Lucas encontra um mapa misterioso dentro de um livro antigo da biblioteca onde costumava estudar, logo ele tem duas escolhas:
             </p>
             <button class="btn-próximo" data-proximo="1"> Ignorar e continuar sua rotina. </button>
             <button class="btn-próximo" data-proximo="2"> Seguir as pistas e descobrir o segredo. </button>
+        </div>
 
+        <div class="passo" id="passo-1">
             <p> Ao chegar na floresta, ele encontra uma trilha coberta por névoa.
             </p>
                 <button class="btn-próximo" data-proximo="3"> Voltar para casa com medo. </button>
@@ -27,29 +29,37 @@
 
                 <p> Do outro lado, Lucas vê uma criatura misteriosa observando-o.
                 </p>
+        </div>
 
+        <div class="passo" id="passo-2">
                 <button class="btn-próximo" data-proximo="5"> Fugir imediatamente. </button>
                 <button class="btn-próximo" data-proximo="6"> Seguir a criatura. </button>
+        </div>
 
+        <div class="passo" id="passo-3">
                 <p> Nas ruínas, há uma esfera brilhante sobre um pedestal.
                 </p>
 
                 <button class="btn-próximo" data-proximo="7"> Tocar a esfera.</button>
                 <button class="btn-próximo" data-proximo="8"> Deixar tudo como está e ir embora.</button>
+        </div>
 
+        <div class="passo" id="passo-4">
                 <p> A esfera mostra que o lugar está desaparecendo.
                 </p>
 
                 <button class="btn-próximo" data-proximo="9"> Aceitar a missão de protegê-lo. </button>
                 <button class="btn-próximo" data-proximo="10"> Fingir que nada aconteceu. </button>
+        </div>
 
+        <div class="passo" id="passo-5">
                 <p> Ao voltar para casa, o mapa aparece completo.
                 </p>
 
                 <button class="btn-próximo" data-proximo="11"> Guardá-lo em segredo e continuar sua missão. </button>
-                <button class="btn-próximo" data-proximo="12"> Contar tudo para todos, mesmo sem saber se vão acreditar. </button>
-        </div>
+                <button class="btn-próximo" data-proximo="12"> Contar tudo para todos, mesmo sem saber se vão acreditar.</button>
+                <script src="script.js"></script>
+                </div>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
