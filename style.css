@@ -14,3 +14,11 @@ button {
     color: black;
     font-family: "Playwrite DE SAS", cursive;
 }
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
