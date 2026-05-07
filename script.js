@@ -9,3 +9,13 @@ avanca.forEach(buttton => {
         document.getElementById(proximoPasso).classList.add('ativo');
     })
 })
+
+//document.getElementById("btnIr").addEventListener("click", function() {
+    //const destino = document.getElementById("sec2");
+   // if (destino) {
+       // window.scrollTo({
+         //   top: destino.offsetTop,
+        //    behavior: "smooth"
+        //});
+   // }
+//});

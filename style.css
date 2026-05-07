@@ -1,4 +1,4 @@
-body {
+    body {
     background-color: cyan;
     color: black;
     font-family: "Playwrite DE SAS", cursive;
@@ -9,7 +9,16 @@ body {
     margin: 0;
 }
 
-button {
+    div {
+    text-align: center;
+}
+    
+    img {
+    display: block; /* Necessário para margin funcionar */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+    button {
     background-color: #64A712;
     color: black;
     font-family: "Playwrite DE SAS", cursive;
