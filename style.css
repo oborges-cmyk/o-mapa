@@ -1,16 +1,12 @@
     body {
     background-color: cyan;
     color: black;
-    font-family: "Playwrite DE SAS", cursive;
+    font-family: "Playfair Display", cursive;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 700px;
     margin: 0;
-        }
-
-    div {
-    text-align: center;
         }
     
     img {
@@ -21,8 +17,8 @@
     button {
     background-color: #64A712;
     color: black;
-    font-family: "Playwrite DE SAS", cursive;
-}
+    font-family: "Playfair Display", cursive;
+            }
 
 .passo {
     display: none;
