@@ -3,68 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O mapa secreto: o jogo</title>
-    <link rel="stylesheet" href="style.css" 
+    <title>O mapa secreto: o jogo </title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..400&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
     <main> 
-        <div class="topo" id="topo">
+            <div class="passo ativo" id="passo-1">
             <h1> O mapa secreto</h1>
-        </div>
-            <div class="passo ativo" id="passo-0">
-            <p> Essa história ocorre em 2011, no Brasil, Jefferson, um jovem aventureiro e escoteiro vivia normalmente, porém não esperava o que ia 
-                acontecer com ele.
-                <img src="1-img.png">
+            <p> Essa história ocorre em 2011, no Brasil, Jefferson, um jovem aventureiro e escoteiro vivia normalmente, porém iria passar por um 
+                evento inusitado.
+                <img src="1-img.png" alt=""/>
                 No dia 28 de maio de 2011, Lucas encontra um mapa misterioso dentro de um livro antigo da biblioteca onde costumava estudar, logo
                 ele se vê com 2 escolhas:
             </p>
-            <button class="btn-próximo" data-proximo="1"> Ignorar e continuar sua rotina. </button>
-            <button class="btn-próximo" data-proximo="2"> Seguir as pistas e descobrir o segredo. </button>
-        </div>
-
-        <div class="passo" id="passo-1">
-            <p> Ao chegar na floresta, ele encontra uma trilha coberta por névoa.
-            </p>
-            <img src="2-img.png">
-                <button class="btn-próximo" data-proximo="3"> Voltar para casa com medo. </button>
-                <button class="btn-próximo" data-proximo="4"> Entrar na névoa e continuar. </button>
-
-                
+            <button class="btn-próximo" data-proximo="2">  Seguir as pistas e descobrir o segredo. </button>
+            <button class="btn-voltar" data-voltar="1"> Ignorar e continuar sua rotina. </button>
         </div>
 
         <div class="passo" id="passo-2">
-            <p> Do outro lado, Lucas vê uma criatura misteriosa observando-o.</p>
-            <img src="3-img.png">
-                <button class="btn-próximo" data-proximo="5"> Fugir imediatamente. </button>
-                <button class="btn-próximo" data-proximo="6"> Seguir a criatura. </button>
+            <p> Ao chegar na floresta, ele encontra uma trilha coberta por névoa.
+            </p>
+            <img src="2-img.png" alt=""/>
+                <button class="btn-próximo" data-proximo="4"> Entrar na névoa e continuar. </button>
+                <button class="btn-voltar" data-voltar="3"> Voltar para casa com medo. </button>
+  
         </div>
 
         <div class="passo" id="passo-3">
-                <p> Nas ruínas, há uma esfera brilhante sobre um pedestal.
-                </p>
-            <img src="4-img.png">
-                <button class="btn-próximo" data-proximo="7"> Tocar a esfera.</button>
-                <button class="btn-próximo" data-proximo="8"> Deixar tudo como está e ir embora.</button>
+            <p> Do outro lado, Lucas vê uma criatura misteriosa observando-o.</p>
+            <img src="3-img.png" alt=""/>
+                <button class="btn-próximo" data-proximo="6"> Seguir a criatura.</button>
+                <button class="btn-voltar" data-voltar="5"> Fugir imediatamente.  </button>
         </div>
 
         <div class="passo" id="passo-4">
-                <p> A esfera mostra que o lugar está desaparecendo.
+                <p> Nas ruínas, há uma esfera brilhante sobre um pedestal.
                 </p>
-
-                <button class="btn-próximo" data-proximo="9"> Aceitar a missão de protegê-lo. </button>
-                <button class="btn-próximo" data-proximo="10"> Fingir que nada aconteceu. </button>
+            <img src="4-img.png" alt=""/>
+                <button class="btn-próximo" data-proximo="8"> Deixar tudo como está e ir embora.</button>
+                <button class="btn-voltar" data-voltar="7"> Tocar a esfera. </button>
         </div>
 
         <div class="passo" id="passo-5">
+                <p> A esfera mostra que o lugar está desaparecendo.
+                </p>
+                <img src="5-img.png" alt=""/>
+                <button class="btn-próximo" data-proximo="10"> Fingir que nada aconteceu. </button>
+                <button class="btn-voltar" data-voltar="9"> Aceitar a missão de protegê-lo. </button>
+        </div>
+
+        <div class="passo" id="passo-6">
               <p> Ao voltar para casa, o mapa aparece completo.
                 </p>
-
-                <button class="btn-próximo" data-proximo="11"> Guardá-lo em segredo e continuar sua missão. </button>
-                <button class="btn-próximo" data-proximo="12"> Contar tudo para todos, mesmo sem saber se vão acreditar.</button>
+                <img src="6-img.png" alt=""/>
+                <button class="btn-próximo" data-proximo="12"> Contar tudo para todos, mesmo sem saber se vão acreditar. </button>
+                <button class="btn-voltar" data-voltar="11"> Guardá-lo em segredo e continuar sua missão. </button>
                 <script src="script.js"></script>
                 </div>
     </main>
