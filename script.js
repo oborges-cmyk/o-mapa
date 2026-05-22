@@ -1,5 +1,5 @@
 // seleciona todos os botões
-const botoes = document.querySelectorAll(".btn-proximo, .btn-voltar");
+const botoes = document.querySelectorAll(".btn-próximo, .btn-voltar");
 
 // adiciona clique em cada botão
 botoes.forEach(botao => {
@@ -25,3 +25,5 @@ botoes.forEach(botao => {
     });
 
 });
+// Inicializa os botões e passos
+atualizarPasso();
