@@ -1,4 +1,4 @@
-    body {
+body {
     background-color: cyan;
     color: black;
     font-family: "Playfair Display", cursive;
@@ -7,23 +7,23 @@
     align-items: center;
     min-height: 100vh;
     margin: 0;
-        }
-    
-    img{
-        width: 300px;
-        border-radius: 10px;
-    }
+}
 
-    button{
-        padding: 10
-        background-color: #64A712;
-        color: black;
-        font-family: "Playfair Display", cursive;px 20px;
-        margin: 10px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-    }
+img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #64A712;
+    color: black;
+    font-family: "Playfair Display", cursive;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
 .passo {
     display: none;
@@ -31,4 +31,25 @@
 
 .passo.ativo {
     display: block;
+}
+
+.overlay-final {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay-final.ativo {
+    display: flex;
+}
+
+.overlay-final p {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
